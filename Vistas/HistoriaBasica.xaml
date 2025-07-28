@@ -1,0 +1,177 @@
+﻿<Window x:Class="Sofware_CMJC_Version_1._0.Vistas.HistoriaBasica"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sofware_CMJC_Version_1._0.Vistas" 
+        xmlns:vistamodelo="clr-namespace:Sofware_CMJC_Version_1._0.VistaModelo"
+        d:DataContext="{d:DesignInstance Type=vistamodelo:HistoriaBasicaVM}"
+        mc:Ignorable="d"
+        Title="HistoriaBasica" 
+        Height="700" Width="800"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        Background="White">
+    
+    <Border CornerRadius="0"
+   BorderThickness="2.5" Margin="0,0,0,0">
+
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0.5,1.5" EndPoint="1,1">
+                <GradientStop Color="{StaticResource Color1}" Offset="1"/>
+                <GradientStop Color="{StaticResource Color2}" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,0">
+                <GradientStop Color="{StaticResource Color4}" Offset="0"/>
+                <GradientStop Color="{StaticResource Color4}" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <!-- Contenido principal -->
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border CornerRadius="35"
+                  Grid.Column="0">
+                <Border.Background>
+                    <ImageBrush Opacity="0.25" ImageSource="/Vistas/Recursos/LOGO.png"/>
+                </Border.Background>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <!--Barra Superior-->
+                        <RowDefinition Height="25"/>
+                        <!--Titulo-->
+                        <RowDefinition Height="55"/>
+                        <!--Contenido I-->
+                        <RowDefinition Height="380"/>
+                        <!--Contenido II-->
+                        <RowDefinition Height="150"/>
+                        <!--Botones-->
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel x:Name="PnlControlBar"
+                              Grid.Row="0"
+                              Orientation="Horizontal"
+                              FlowDirection="RightToLeft"
+                              Background="#1A7C82"
+                              MouseDown="PnlControlBar_MouseLeftButtonDown"
+                              MouseLeftButtonUp="PnlControlBar_MouseLeftButtonUp">
+
+                        <Button x:Name="btnBack"
+                               Click="btnBack_Click"
+                              Style="{StaticResource BotonS1}">
+                            <Image Source="/Vistas/Recursos/anterior.png" Width="16"/>
+                        </Button>
+
+                        <Button x:Name="btnMinimize"
+                              Style="{StaticResource BotonS1}"
+                              Click="BtnMinimize_Click">
+                            <Image Source="/Vistas/Recursos/menos.png" Width="16"/>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1"
+                               Orientation="Horizontal"
+                               Background="#FFFFFF">
+                        <Image Margin="0" Source="/Vistas/Recursos/historial-medico.png"/>
+                        <TextBlock Text="Historia Clinico (Básico)"
+                                  Foreground="#4D4D4D"
+                                  Margin="5"
+                                  FontSize="35"
+                                  FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBlock Text="Usuario:"
+                                  Foreground="#4D4D4D"
+                                  HorizontalAlignment="Right"
+                                  Margin="220,20,0,0"
+                                  FontSize="20"
+                                  FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBlock x:Name="TxtUsuarioBlock"
+                                  Foreground="#4D4D4D"
+                                  HorizontalAlignment="Right"
+                                  Margin="10,20,0,0"
+                                  FontSize="20"
+                                  FontFamily="{StaticResource BebasNeueFont}"
+                                   Text="{Binding UserFullName}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="2" Width="Auto" Margin="10"  Background="Transparent" >
+                        <!-- Datos del Paciente -->
+                        <TextBlock Text="Paciente:" Foreground="Black" FontSize="20" FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBox Margin="0,-20,0,0" Height="20" Width="400" FontFamily="{StaticResource FranklinGothicFont}" Opacity="0.65" 
+                                 Text="{Binding NombreCompleto}" FontSize="16"/>
+                        <TextBlock Text="Dirección:" Foreground="Black" FontSize="20" FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBox Margin="0,-20,0,0" Height="20" Width="400" FontFamily="{StaticResource FranklinGothicFont}" Opacity="0.65"
+                                 Text="{Binding PacienteSeleccionado.Direccion}" FontSize="16"/>
+                        <TextBlock Text="Ocupación:" Foreground="Black" FontSize="20" FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBox Margin="0,-20,0,0" Height="20" Width="400" FontFamily="{StaticResource FranklinGothicFont}" Opacity="0.65"
+                                 Text="{Binding PacienteSeleccionado.Ocupacion}" FontSize="16"/>
+                        <TextBlock Text="Médico:" Foreground="Black" FontSize="20" FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBox Margin="0,-20,0,0" Height="20" Width="400" FontSize="16" FontFamily="{StaticResource FranklinGothicFont}" Opacity="0.65"
+                                 Text="Dr.Julio César Agurto Urcia"/>
+                        <TextBlock Text="Especialidad:" Foreground="Black" FontSize="20" FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBox Margin="0,-20,0,0" Height="20" Width="400" FontFamily="{StaticResource FranklinGothicFont}" Opacity="0.65"
+                                 Text="Traumatología" FontSize="16"/>
+                        <TextBlock Text="Aseguradora:" Foreground="Black" FontSize="20" FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBox Margin="0,-20,0,0" Height="20" Width="400" FontFamily="{StaticResource FranklinGothicFont}" Opacity="0.65"
+                                 Text="{Binding PacienteSeleccionado.Aseguradora}" FontSize="16"/>
+                        <TextBlock Text="Fecha de nacimiento:" Foreground="Black" FontSize="20" FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBox Margin="0,-20,0,0" Height="20" Width="400" FontFamily="{StaticResource FranklinGothicFont}" Opacity="0.65"
+                                  Text="{Binding FechaNacimientoConEdad,Mode=OneWay}" FontSize="16"/>
+                        <TextBlock Text="Edad:" Foreground="Black" FontSize="20" FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBox Margin="0,-20,0,0" Height="20" Width="400" FontFamily="{StaticResource FranklinGothicFont}" Opacity="0.65"
+                                 Text="{Binding PacienteSeleccionado.Edad,Mode=OneWay}" FontSize="16"/>
+                        <!-- Datos del Genero, Estado Civil y Atención -->
+                        <TextBlock Text="Género:" Foreground="Black" FontSize="20" FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBox Margin="0,-20,0,0" Height="20" Width="400" FontFamily="{StaticResource FranklinGothicFont}" Opacity="0.65"
+                                 Text="{Binding PacienteSeleccionado.Genero}" FontSize="16"/>
+                        <TextBlock Text="Estado Civil:" Foreground="Black" FontSize="20" FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBox Margin="0,-20,0,0" Height="20" Width="400" FontFamily="{StaticResource FranklinGothicFont}" Opacity="0.65" 
+                                 Text="{Binding PacienteSeleccionado.EstadoCivil}" FontSize="16"/>
+                        <TextBlock Text="N° Atencion:" Foreground="Black" FontSize="20" FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBox Margin="0,-20,0,0" Height="20" Width="400" FontFamily="{StaticResource FranklinGothicFont}" Opacity="0.65"
+                                  Text="{Binding Atencion,Mode=OneWay}" FontSize="16"/>
+                        <!-- Opciones para la Atención (Ambulatorio o Emergencia) -->
+                        <CheckBox x:Name="Ambulatorio" Content="Ambulatorio." Foreground="Black" FontSize="20" FontFamily="{StaticResource BebasNeueFont}"
+                                  IsChecked="{Binding AmbulatorioSeleccionado}"/>
+                        <CheckBox x:Name="Emergencia" Content="Emergencia." Foreground="Black" FontSize="20" FontFamily="{StaticResource BebasNeueFont}"
+                                  IsChecked="{Binding EmergenciaSeleccionada}"/>
+                    </StackPanel>
+                    <StackPanel  Grid.Row="3" Width="Auto" Margin="10"  Background="Transparent">
+                        <TextBlock Text="Antecedentes" Foreground="Black" FontSize="20" FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBlock Text="Familiares:" Foreground="Black" FontSize="18" FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBox Margin="0,-20,0,0" Height="20" Width="400" FontFamily="{StaticResource FranklinGothicFont}"
+                                 Text="{Binding Familiares}" FontSize="16"/>
+                        <TextBlock Text="Patologicos:" Foreground="Black" FontSize="18" FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBox Margin="0,-20,0,0" Height="20" Width="400" FontFamily="{StaticResource FranklinGothicFont}"
+                                 Text="{Binding Patologicos}" FontSize="16"/>
+                        <TextBlock Text="Quirurgicos:" Foreground="Black" FontSize="18"  FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBox Margin="0,-20,0,0" Height="20" Width="400" FontFamily="{StaticResource FranklinGothicFont}"
+                                 Text="{Binding Quirurgicos}" FontSize="16"/>
+                        <TextBlock Text="Alergias:" Foreground="Black" FontSize="18"  FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBox Margin="0,-20,0,0" Height="20" Width="400" FontFamily="{StaticResource FranklinGothicFont}"
+                                 Text="{Binding Alergias}" FontSize="16"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="4" Margin="0,0,25,0">
+                        <Button Content="Guardar Historia Basica" 
+                         Margin="15,25,0,0"
+                         HorizontalAlignment="Left"
+                         Style="{StaticResource BotonS3}"
+                                Visibility="{Binding GuardarHistoriaVisibility}"
+                                Command="{Binding GuardarHistoriaCommand}"/>
+                        <Button Content="Añadir Nueva Consulta" 
+                         Margin="615,-25,0,0"
+                         HorizontalAlignment="Left"
+                         Style="{StaticResource BotonS3}"
+                                 Visibility="{Binding NuevaConsultaVisibility}"
+                                Command="{Binding NuevaConsultaCommand}"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</Window>

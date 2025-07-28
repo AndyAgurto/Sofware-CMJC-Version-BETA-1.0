@@ -1,0 +1,117 @@
+﻿<Window x:Class="Sofware_CMJC_Version_1._0.Vistas.SignUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sofware_CMJC_Version_1._0.VistaModelo" 
+        d:DataContext="{d:DesignInstance Type=local:SignUpVM}"
+        mc:Ignorable="d"
+        Title="SignUp" 
+        Height="450" Width="800"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True">
+
+    <Border CornerRadius="50">
+        <Border.Background>
+            <ImageBrush ImageSource="/Vistas/Recursos/Fondo.jpg"/>
+        </Border.Background>
+
+        <Border CornerRadius="40"
+          BorderThickness="5"
+          Opacity="0.80">
+
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="{StaticResource Color2}" Offset="1"/>
+                    <GradientStop Color="{StaticResource Color2}" Offset="0"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="20"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="btnBack"
+                               Click="btnBack_Click"
+                            Grid.Column="2"
+                              Style="{StaticResource BotonS1}">
+                        <Image Source="/Vistas/Recursos/anterior.png" Width="16"/>
+                    </Button>
+                    <Button x:Name="btnMinimize"
+                      Grid.Column="1"
+                      Style="{StaticResource BotonS1}"
+                      Click="BtnMinimize_Click">
+                        <Image Source="/Vistas/Recursos/menos.png"/>
+                    </Button>
+                </Grid>
+                <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20">
+                    <TextBlock Text="Registro de Usuario" Foreground="Black" FontSize="24" FontFamily="{StaticResource BebasNeueFont}" Margin="0,0,0,20"/>
+
+                    <!-- ComboBox para el tipo de usuario -->
+                    <ComboBox x:Name="TipoUsuarioComboBox" 
+                              FontFamily="{StaticResource BebasNeueFont}"
+                                  Tag="Tipo de usuario" 
+                                  Margin="0,0,0,10"
+                                  ItemsSource="{Binding TipoUsuarios}" 
+                                  SelectedItem="{Binding TipoUsuario}" 
+                                  SelectionChanged="TipoUsuario_SelectionChanged"/>
+                    <TextBlock Name="TipoUsuarioPlaceHolder" Text="Tipo de usuario" Margin="0,-30,0,10" 
+                               Foreground="Gray" FontFamily="{StaticResource BebasNeueFont}"
+                               IsHitTestVisible="False"
+                               Visibility="Visible"/>
+
+                    <!-- TextBox para el nombre de usuario -->
+                    <TextBox x:Name="txtLoginName" Style="{StaticResource PlaceholderTextBox}" 
+                             Tag="Nombre de usuario" Margin="0,0,0,10" 
+                             FontFamily="{StaticResource FranklinGothicFont}"
+                             Text="{Binding LoginName}"/>
+
+                    <!-- PasswordBox para la contraseña -->
+                    <PasswordBox Grid.Row="1" Name="PasswordBox" 
+                     PasswordChanged="PasswordBox_PasswordChanged" Margin="0,0,0,10"/>
+                                <TextBlock Grid.Row="0" Margin="5,-40,0,0" x:Name="ContraseñaPlaceHolder" Text="Contraseña"
+                                   VerticalAlignment="Center" Foreground="Gray"
+                                   IsHitTestVisible="False"
+                                   Visibility="Visible" FontFamily="{StaticResource BebasNeueFont}">
+                                </TextBlock>
+
+                        <!-- TextBox para nombres -->
+                    <TextBox x:Name="txtNombres" Style="{StaticResource PlaceholderTextBox}" 
+                             Tag="Nombres" Margin="0,0,0,10"
+                             FontFamily="{StaticResource FranklinGothicFont}"
+                             Text="{Binding Nombres}"/>
+
+                    <!-- TextBox para apellidos -->
+                    <TextBox x:Name="txtApellidos" Style="{StaticResource PlaceholderTextBox}" 
+                             Tag="Apellidos" Margin="0,0,0,10" 
+                             FontFamily="{StaticResource FranklinGothicFont}"
+                             Text="{Binding Apellidos}"/>
+
+                    <!-- TextBox para correo electrónico -->
+                    <TextBox x:Name="txtCorreo" Style="{StaticResource PlaceholderTextBox}" 
+                             Tag="Correo electrónico" Margin="0,0,0,20" 
+                             FontFamily="{StaticResource FranklinGothicFont}"
+                             Text="{Binding Correo}"/>
+
+                    <!-- Botón para registrar -->
+                    <Button Content="Registrar" Style="{StaticResource BotonS2}" 
+                            Command="{Binding SignUpCommand}" HorizontalAlignment="Center" 
+                            FontFamily="{StaticResource BebasNeueFont}"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

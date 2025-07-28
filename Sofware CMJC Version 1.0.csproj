@@ -1,0 +1,115 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows7.0</TargetFramework>
+    <RootNamespace>CMJC</RootNamespace>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+    <StartupObject>Sofware_CMJC_Version_1._0.App</StartupObject>
+    <ApplicationIcon>CMJCico.ico</ApplicationIcon>
+    <IsPublishable>True</IsPublishable>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <SignAssembly>False</SignAssembly>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageId>CMJC</PackageId>
+    <Title></Title>
+    <Version>1.0.0</Version>
+    <Authors>Andy Agurto Urcia</Authors>
+    <Company>DruaTec</Company>
+    <Product>CMJC Version 1.0</Product>
+    <Description>Software de escritorio para Consultorio Médico.</Description>
+    <Copyright>Propiedad de DruaTec</Copyright>
+    <PackageIcon>LOGO PNG COLOR_Mesa de trabajo 1.png</PackageIcon>
+    <AssemblyVersion>1.0</AssemblyVersion>
+    <FileVersion>1.0</FileVersion>
+    <IncludeSymbols>False</IncludeSymbols>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <AssemblyName>CMJC</AssemblyName>
+    <PackAsTool>False</PackAsTool>
+    <ToolCommandName />
+    <ImplicitUsings>disable</ImplicitUsings>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Vistas\Recursos\Acoount.png" />
+    <None Remove="Vistas\Recursos\anterior.png" />
+    <None Remove="Vistas\Recursos\cerrar.png" />
+    <None Remove="Vistas\Recursos\diagnostico.png" />
+    <None Remove="Vistas\Recursos\doctor.png" />
+    <None Remove="Vistas\Recursos\Fondo.jpg" />
+    <None Remove="Vistas\Recursos\Font\BebasNeue-Regular.ttf" />
+    <None Remove="Vistas\Recursos\Font\Franklin Gothic Medium Cond Regular.ttf" />
+    <None Remove="Vistas\Recursos\grupo.png" />
+    <None Remove="Vistas\Recursos\historial-medico.png" />
+    <None Remove="Vistas\Recursos\Lock.png" />
+    <None Remove="Vistas\Recursos\LOGO BLANCO.png" />
+    <None Remove="Vistas\Recursos\LOGO.png" />
+    <None Remove="Vistas\Recursos\lupa.png" />
+    <None Remove="Vistas\Recursos\max.png" />
+    <None Remove="Vistas\Recursos\medico-paciente.png" />
+    <None Remove="Vistas\Recursos\menos.png" />
+    <None Remove="Vistas\Recursos\paciente.png" />
+    <None Remove="Vistas\Recursos\recepcion.png" />
+    <None Remove="Vistas\Recursos\receta.png" />
+    <None Remove="Vistas\Recursos\salida.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="Vistas\Recursos\Style_CMJC.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="CMJCico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Vistas\Recursos\Acoount.png" />
+    <Resource Include="Vistas\Recursos\anterior.png" />
+    <Resource Include="Vistas\Recursos\cerrar.png" />
+    <Resource Include="Vistas\Recursos\diagnostico.png" />
+    <Resource Include="Vistas\Recursos\doctor.png" />
+    <Resource Include="Vistas\Recursos\Fondo.jpg" />
+    <Resource Include="Vistas\Recursos\Font\Franklin Gothic Medium Cond Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Vistas\Recursos\Font\BebasNeue-Regular.ttf" />
+    <Resource Include="Vistas\Recursos\grupo.png" />
+    <Resource Include="Vistas\Recursos\historial-medico.png" />
+    <Resource Include="Vistas\Recursos\Lock.png" />
+    <Resource Include="Vistas\Recursos\LOGO BLANCO.png" />
+    <Resource Include="Vistas\Recursos\LOGO.png" />
+    <Resource Include="Vistas\Recursos\lupa.png" />
+    <Resource Include="Vistas\Recursos\max.png" />
+    <Resource Include="Vistas\Recursos\medico-paciente.png" />
+    <Resource Include="Vistas\Recursos\menos.png" />
+    <Resource Include="Vistas\Recursos\paciente.png" />
+    <Resource Include="Vistas\Recursos\recepcion.png" />
+    <Resource Include="Vistas\Recursos\receta.png" />
+    <Resource Include="Vistas\Recursos\salida.png" />
+    <Resource Include="Vistas\Recursos\Style_CMJC.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Documents\Programas\CMJC\Resources\LOGO PNG COLOR_Mesa de trabajo 1.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocX" Version="2.5.0" />
+    <PackageReference Include="MailKit" Version="4.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Spire.Doc" Version="12.1.5" />
+  </ItemGroup>
+
+</Project>

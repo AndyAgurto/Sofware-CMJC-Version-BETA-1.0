@@ -1,0 +1,168 @@
+﻿<Window x:Class="Sofware_CMJC_Version_1._0.Vistas.EditPaciente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sofware_CMJC_Version_1._0.Vistas" 
+        xmlns:vistamodelo="clr-namespace:Sofware_CMJC_Version_1._0.VistaModelo" 
+        d:DataContext="{d:DesignInstance Type=vistamodelo:EditPacienteVM}"
+        mc:Ignorable="d"
+        Title="EditPaciente"  Height="600" Width="835"
+         WindowStyle="None"
+         WindowStartupLocation="CenterScreen"
+         AllowsTransparency="True"
+         Background="Transparent">
+    
+    <Border CornerRadius="0"
+        BorderThickness="2.5" Margin="0,0,0,0">
+
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0.5,1.5" EndPoint="1,1">
+                <GradientStop Color="{StaticResource Color1}" Offset="1"/>
+                <GradientStop Color="{StaticResource Color2}" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,0">
+                <GradientStop Color="{StaticResource Color4}" Offset="0"/>
+                <GradientStop Color="{StaticResource Color4}" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <!-- Contenido principal -->
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border CornerRadius="35"
+               Grid.Column="0">
+                <Border.Background>
+                    <ImageBrush Opacity="0.25" ImageSource="/Vistas/Recursos/LOGO.png"/>
+                </Border.Background>
+
+                <Grid Margin="0,0,-25,0">
+                    <Grid.RowDefinitions>
+                        <!--Barra Superior-->
+                        <RowDefinition Height="25"/>
+                        <!--Titulo-->
+                        <RowDefinition Height="55"/>
+                        <!--Contenido-->
+                        <RowDefinition Height="450"/>
+                        <!--Botones-->
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel x:Name="PnlControlBar"
+                           Grid.Row="0"
+                           Orientation="Horizontal"
+                           FlowDirection="RightToLeft"
+                           Background="#1A7C82"
+                           MouseDown="PnlControlBar_MouseLeftButtonDown"
+                           MouseLeftButtonUp="PnlControlBar_MouseLeftButtonUp" Margin="0,0,25,0">
+
+                        <Button x:Name="btnBack"
+                           Style="{StaticResource BotonS1}"
+                                Click="btnBack_Click">
+                            <Image Source="/Vistas/Recursos/anterior.png" Width="16"/>
+                        </Button>
+
+                        <Button x:Name="btnMinimize"
+                           Style="{StaticResource BotonS1}"
+                           Click="BtnMinimize_Click">
+                            <Image Source="/Vistas/Recursos/menos.png" Width="16"/>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1"
+                            Orientation="Horizontal"
+                            Background="#FFFFFF" Margin="0,0,26,0">
+                        <Image Margin="0" Source="/Vistas/Recursos/grupo.png"/>
+                        <TextBlock Text="Editar Paciente"
+                               Foreground="#4D4D4D"
+                               Margin="5"
+                               FontSize="35"
+                               FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBlock Text="Usuario:"
+                               Foreground="#4D4D4D"
+                               HorizontalAlignment="Right"
+                               Margin="300,20,0,0"
+                               FontSize="20"
+                               FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBlock x:Name="TxtUsuarioBlock"
+                               Foreground="#4D4D4D"
+                               HorizontalAlignment="Right"
+                               Margin="10,20,0,0"
+                               FontSize="20"
+                               FontFamily="{StaticResource BebasNeueFont}"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Margin="0,45,25,0">
+                        <!-- Datos del Paciente -->
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="Documento de Identidad:" Grid.Row="0" Margin="15,5,0,0" Foreground="Black" FontSize="18" FontFamily="{StaticResource BebasNeueFont}"/>
+                            <ComboBox Grid.Row="0" ItemsSource="{Binding DocIdentidad}" SelectedItem="{Binding DocIdentidadSeleccionado}" HorizontalAlignment="Left" Margin="175,5,0,0" Width="150" Foreground="Black" FontSize="15" FontFamily="{StaticResource BebasNeueFont}"/>
+                            <TextBox Text="{Binding DIdentidad, UpdateSourceTrigger=PropertyChanged}" Margin="200,5,0,0" FontSize="18" Width="200" FontFamily="{StaticResource FranklinGothicFont}"/>
+
+                            <TextBlock Text="Nombres:" Grid.Row="1" Margin="15,5,0,0" Foreground="Black" FontSize="18" FontFamily="{StaticResource BebasNeueFont}"/>
+                            <TextBox Text="{Binding Nombres}" Grid.Row="1" Margin="200,5,0,0" FontSize="18" Width="200" FontFamily="{StaticResource FranklinGothicFont}"/>
+
+                            <TextBlock Text="Apellidos:" Grid.Row="2" Margin="15,5,0,0" Foreground="Black" FontSize="18" FontFamily="{StaticResource BebasNeueFont}"/>
+                            <TextBox Text="{Binding Apellidos}" Grid.Row="2" Margin="200,5,0,0" FontSize="18" Width="200" FontFamily="{StaticResource FranklinGothicFont}"/>
+
+                            <TextBlock Text="Fecha de Nacimiento:" Grid.Row="3" Margin="15,5,0,0" Foreground="Black" FontSize="18" FontFamily="{StaticResource BebasNeueFont}"/>
+                            <DatePicker SelectedDate="{Binding FechaNacimiento}" Grid.Row="3" Margin="415,5,115,35" FontSize="18" Grid.RowSpan="2" FontFamily="{StaticResource FranklinGothicFont}"/>
+
+                            <TextBlock Text="Género:" Grid.Row="4" Margin="15,5,0,0" Foreground="Black" FontSize="18" FontFamily="{StaticResource BebasNeueFont}"/>
+                            <ComboBox ItemsSource="{Binding Generos}"
+                                SelectedItem="{Binding Genero}"
+                              Grid.Row="4" Margin="200,5,0,0" FontSize="18" Width="200" 
+                                      FontFamily="{StaticResource FranklinGothicFont}"
+                                      Text="{Binding Genero}"/>
+
+                            <TextBlock Text="Dirección:" Grid.Row="5" Margin="15,5,0,0" Foreground="Black" FontSize="18" FontFamily="{StaticResource BebasNeueFont}"/>
+                            <TextBox Text="{Binding Direccion}" Grid.Row="5" Margin="200,5,0,0" FontSize="18" Width="200" FontFamily="{StaticResource FranklinGothicFont}"/>
+
+                            <TextBlock Text="Teléfono:" Grid.Row="6" Margin="15,5,0,0" Foreground="Black" FontSize="18" FontFamily="{StaticResource BebasNeueFont}"/>
+                            <TextBox Text="{Binding Telefono}" Grid.Row="6" Margin="200,5,0,0" FontSize="18" Width="200" FontFamily="{StaticResource FranklinGothicFont}"/>
+
+                            <TextBlock Text="Aseguradora:" Grid.Row="7" Margin="15,5,0,0" Foreground="Black" FontSize="18" FontFamily="{StaticResource BebasNeueFont}"/>
+                            <TextBox Text="{Binding Aseguradora}" Grid.Row="7" Margin="200,5,0,0" FontSize="18" Width="200" FontFamily="{StaticResource FranklinGothicFont}"/>
+
+                            <TextBlock Text="Estado Civil:" Grid.Row="8" Margin="15,5,0,0" Foreground="Black" FontSize="18" FontFamily="{StaticResource BebasNeueFont}"/>
+                            <ComboBox ItemsSource="{Binding EstadosCiviles}"
+                                        SelectedItem="{Binding EstadoCivil}"
+                                        Grid.Row="8" Margin="200,5,0,0" FontSize="18" Width="200" FontFamily="{StaticResource FranklinGothicFont}"
+                                      Text="{Binding EstadoCivil}"/>   
+                            <TextBlock Text="Ocupación:" Grid.Row="9" Margin="15,5,0,0" Foreground="Black" FontSize="18" FontFamily="{StaticResource BebasNeueFont}"/>
+                            <TextBox Text="{Binding Ocupacion}" Grid.Row="9" Margin="200,5,0,0" FontSize="18" Width="200" FontFamily="{StaticResource FranklinGothicFont}"/>
+                            <TextBlock Text="Tipo de Sangre:" Grid.Row="10" Margin="15,5,0,0" Foreground="Black" FontSize="18" FontFamily="{StaticResource BebasNeueFont}"/>
+                            <ComboBox x:Name="SangresCombo" Grid.Row="10" ItemsSource="{Binding Sangres}" SelectedItem="{Binding SangreSeleccionado}" HorizontalAlignment="Left" Margin="415,5,0,0" Width="200" Foreground="Black" 
+                                      FontSize="15" FontFamily="{StaticResource BebasNeueFont}"
+                                      Text="{Binding SangreSeleccionado}"/>
+                        </Grid>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="3" Margin="0,0,25,0">
+                        <Button Content="Actualizar Paciente" 
+                     Margin="615,25,0,0"
+                     HorizontalAlignment="Left"
+                     Style="{StaticResource BotonS3}"
+                                Command="{Binding ActualizarCommand}"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</Window>

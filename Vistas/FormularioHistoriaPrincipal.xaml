@@ -1,0 +1,273 @@
+﻿<Window x:Class="Sofware_CMJC_Version_1._0.Vistas.FormularioHistoriaPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sofware_CMJC_Version_1._0.Vistas" 
+        xmlns:vistamodelo="clr-namespace:Sofware_CMJC_Version_1._0.VistaModelo" 
+        d:DataContext="{d:DesignInstance Type=vistamodelo:FormularioHistoriaPrincipalVM}"
+        mc:Ignorable="d"
+        Title="FormularioHistoriaPrincipal" 
+        Height="800" Width="835"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        Background="Transparent">
+
+    <Border CornerRadius="0"
+    BorderThickness="2.5" Margin="0,0,0,0">
+
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0.5,1.5" EndPoint="1,1">
+                <GradientStop Color="{StaticResource Color1}" Offset="1"/>
+                <GradientStop Color="{StaticResource Color2}" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,0">
+                <GradientStop Color="{StaticResource Color4}" Offset="0"/>
+                <GradientStop Color="{StaticResource Color4}" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <!-- Contenido principal -->
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Border CornerRadius="35"
+                   Grid.Column="0">
+                <Border.Background>
+                    <ImageBrush Opacity="0.25" ImageSource="/Vistas/Recursos/LOGO.png"/>
+                </Border.Background>
+
+                <Grid Margin="0,0,-25,0">
+                    <Grid.RowDefinitions>
+                        <!--Barra Superior-->
+                        <RowDefinition Height="25"/>
+                        <!--Titulo-->
+                        <RowDefinition Height="50"/>
+                        <!--Contenido-->
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel x:Name="PnlControlBar"
+                               Grid.Row="0" Grid.Column="0"
+                               Orientation="Horizontal"
+                               FlowDirection="RightToLeft"
+                               Background="#1A7C82"
+                               MouseDown="PnlControlBar_MouseLeftButtonDown"
+                               MouseLeftButtonUp="PnlControlBar_MouseLeftButtonUp">
+
+                        <Button x:Name="btnBack"
+                                Click="btnBack_Click"
+                               Style="{StaticResource BotonS1}">
+                            <Image Source="/Vistas/Recursos/anterior.png" Width="16"/>
+                        </Button>
+
+                        <Button x:Name="btnMinimize"
+                               Style="{StaticResource BotonS1}"
+                               Click="BtnMinimize_Click">
+                            <Image Source="/Vistas/Recursos/menos.png" Width="16"/>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Grid.Column="0"
+                                Orientation="Horizontal"
+                                Background="#FFFFFF">
+                        <Image Margin="10,10,10,10" Source="/Vistas/Recursos/historial-medico.png"/>
+                        <TextBlock Text="Historia Clinica"
+                                   Foreground="#4D4D4D"
+                                   Margin="5"
+                                   FontSize="35"
+                                   FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBlock Text="Usuario:"
+                                   Foreground="#4D4D4D"
+                                   HorizontalAlignment="Right"
+                                   Margin="250,20,0,0"
+                                   FontSize="20"
+                                   FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBlock 
+                                   Foreground="#4D4D4D"
+                                   HorizontalAlignment="Right"
+                                   Margin="10,20,0,0"
+                                   FontSize="20"
+                                   FontFamily="{StaticResource BebasNeueFont}"
+                                   Text="{Binding UserFullName}"/>
+                    </StackPanel>
+
+                    <ScrollViewer Grid.Row="2" Grid.Column="0" VerticalScrollBarVisibility="Auto" Margin="0" Height="Auto">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <!--Contenido Principal-->
+                                <RowDefinition Height="Auto"/>
+                                <!--Contenido Secundario-->
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <!--Formulario Historia Principal-->
+                            <StackPanel Grid.Row="0" 
+                                Orientation="Horizontal"
+                                Background="Transparent">
+
+                                <!-- Lado Izquierdo -->
+                                <StackPanel Width="Auto" Margin="10">
+                                    <!-- Datos del Paciente -->
+                                    <TextBlock Text="Paciente:" Foreground="Black" FontSize="20" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                    <TextBlock Text="Dirección:" Foreground="Black" FontSize="20" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                    <TextBlock Text="Ocupación:" Foreground="Black" FontSize="20" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                    <TextBlock Text="Médico:" Foreground="Black" FontSize="20" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                    <TextBlock Text="Especialidad:" Foreground="Black" FontSize="20" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                    <TextBlock Text="Aseguradora:" Foreground="Black" FontSize="20" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                </StackPanel>
+
+                                <!-- Lado Derecho -->
+                                <Grid  Width="Auto" Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <!--Espacio de llenado del Lado Izquierdo-->
+                                    <Grid Width="250"  VerticalAlignment="Top" Grid.Column="0" Margin="0,0,10,0">
+                                    </Grid>
+                                    <!-- Datos de la Fecha de Nacimiento y Edad -->
+                                    <StackPanel Grid.Column="1"  >
+                                        <TextBlock Text="Fecha de nacimiento:" Foreground="Black" FontSize="20" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                        <TextBlock Text="Edad:" Foreground="Black" FontSize="20" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                        <!-- Datos del Genero, Estado Civil y Atención -->
+                                        <TextBlock Text="Género:" Foreground="Black" FontSize="20" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                        <TextBlock Text="Estado Civil:" Foreground="Black" FontSize="20" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                        <TextBlock Text="N° Atencion:" Foreground="Black" FontSize="20" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                    </StackPanel>
+                                    <!--Espacio de llenado del Lado Izquierdo-->
+                                    <Grid Width="250"  VerticalAlignment="Top" Grid.Column="2" Margin="0,0,10,0">
+                                    </Grid>
+                                </Grid>
+                            </StackPanel>
+                            <!--Formulario Historia Secundario-->
+                            <StackPanel Grid.Row="0" 
+                                Orientation="Vertical"
+                                Background="Transparent">
+
+                                <!-- Antecedentes -->
+                                <StackPanel Width="Auto" Margin="10,180,0,0">
+                                    <TextBlock Text="Antecedentes" Foreground="Black" FontSize="20" Margin="0,0,0,10" FontFamily="{StaticResource BebasNeueFont}"/>
+                                    <TextBlock Text="Familiares:" Foreground="Black" FontSize="18" Margin="0,5,0,5" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                    <TextBlock Text="Patologicos:" Foreground="Black" FontSize="18" Margin="0,0,0,5" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                    <TextBlock Text="Quirurgicos:" Foreground="Black" FontSize="18" Margin="0,0,0,5" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                    <TextBlock Text="Alergias:" Foreground="Black" FontSize="18" Margin="0,0,0,5" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                </StackPanel>
+
+                                <StackPanel Width="Auto" Margin="10">
+                                    <!-- Síntomas y Signos -->
+                                    <TextBlock Text="Síntomas y Signos:" Foreground="Black" FontSize="20" Margin="0,0,0,10" FontFamily="{StaticResource BebasNeueFont}"/>
+                                    <!-- Examen Físico -->
+                                    <StackPanel Width="Auto" Margin="10">
+                                        <TextBlock Text="Examen Físico" Foreground="Black" FontSize="20" Margin="0,0,0,10" FontFamily="{StaticResource BebasNeueFont}"/>
+                                        <TextBlock Text="FC:" Foreground="Black" FontSize="18" Margin="0,0,0,5" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                        <TextBlock Text="FR:" Foreground="Black" FontSize="18" Margin="0,0,0,5" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                        <TextBlock Text="T°:" Foreground="Black" FontSize="18" Margin="0,0,0,5" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                        <TextBlock Text="PA:" Foreground="Black" FontSize="18" Margin="0,0,0,5" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                        <TextBlock Text="Peso:" Foreground="Black" FontSize="18" Margin="0,0,0,5" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                        <TextBlock Text="Talla:" Foreground="Black" FontSize="18" Margin="0,0,0,5" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                        <TextBlock Text="IMC:" Foreground="Black" FontSize="18" Margin="0,0,0,5" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                        <TextBlock Text="Descripción Adicional:" Foreground="Black" FontSize="18" Margin="0,0,0,5" FontFamily="{StaticResource FranklinGothicFont}"/>
+                                    </StackPanel>
+                                    <!-- Exámenes Auxiliares -->
+                                    <TextBlock Text="Exámenes Auxiliares:" Foreground="Black" FontSize="20" Margin="0,0,0,10" FontFamily="{StaticResource BebasNeueFont}"/>
+                                </StackPanel>
+                                <!-- Tratamiento -->
+                                <TextBlock Text="Tratamiento:" Foreground="Black" FontSize="20" Margin="10,0,0,10" FontFamily="{StaticResource BebasNeueFont}"/>
+                                <!-- Interconsulta -->
+                                <TextBlock Text="Interconsulta:" Foreground="Black" FontSize="20" Margin="10,0,0,10" FontFamily="{StaticResource BebasNeueFont}"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" 
+                                Grid.Row="0" Background="Transparent">
+                                <!-- Lado Derecho -->
+                                <Grid  Width="800" Margin="10,0,0,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="55"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <!--Lenado del Lado Izquierdo-->
+                                    <Grid Width="600"  VerticalAlignment="Top" Grid.Column="1" Margin="0,5,5,0" Height="721">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="406*"/>
+                                            <ColumnDefinition Width="195*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBox VerticalAlignment="Top" IsReadOnly="True" Opacity="0.5" x:Name="TxtPaciente" Margin="-15,5,170,0" Width="250" Height="20" FontFamily="{StaticResource FranklinGothicFont}" 
+                                                 Text="{Binding NombreCompleto,Mode=OneWay}" FontSize="16"/>
+                                        <TextBox VerticalAlignment="Top" IsReadOnly="True" Opacity="0.5" x:Name="TxtDireccion" Margin="-15,30,170,0" Width="250" Height="20" FontFamily="{StaticResource FranklinGothicFont}"
+                                                 Text="{Binding PacienteSeleccionado.Direccion}" FontSize="16"/>
+                                        <TextBox VerticalAlignment="Top" IsReadOnly="True" Opacity="0.5" x:Name="TxtOcupacion" Margin="-15,55,170,0" Width="250" Height="20" FontFamily="{StaticResource FranklinGothicFont}"
+                                                 Text="{Binding PacienteSeleccionado.Ocupacion}" FontSize="16"/>
+                                        <TextBox  VerticalAlignment="Top" IsReadOnly="True" Opacity="0.5" x:Name="TxtMedico" Margin="-15,76,170,0" Width="250" Height="20" FontFamily="{StaticResource FranklinGothicFont}"
+                                                  Text="Dr.Julio César Agurto Urcia" FontSize="16"/>
+                                        <TextBox  VerticalAlignment="Top" IsReadOnly="True" Opacity="0.5" x:Name="TxtEspecialidad" Margin="-15,100,170,0" Width="250" Height="20" FontFamily="{StaticResource FranklinGothicFont}"
+                                                  Text="Traumatología" FontSize="16"/>
+                                        <TextBox  VerticalAlignment="Top" IsReadOnly="True" Opacity="0.5" x:Name="TxtAseguradora" Margin="-15,122,170,0" Width="250" Height="20" FontFamily="{StaticResource FranklinGothicFont}"
+                                                  Text="{Binding PacienteSeleccionado.Aseguradora}" FontSize="16"/>
+                                        <TextBox VerticalAlignment="Top"  IsReadOnly="True" Opacity="0.5" x:Name="TxtFchaNacimiento" Margin="34,8,10,0" Width="150" Height="20" FontFamily="{StaticResource FranklinGothicFont}"
+                                                 Text="{Binding PacienteSeleccionado.FechaNacimiento,Mode=OneWay}" FontSize="16" Grid.Column="1"/>
+                                        <TextBox VerticalAlignment="Top"  IsReadOnly="True" Opacity="0.5" x:Name="TxtEdad" Margin="34,30,10,0" Width="150" Height="20" FontFamily="{StaticResource FranklinGothicFont}"
+                                                 Text="{Binding PacienteSeleccionado.Edad,Mode=OneWay}" FontSize="16" Grid.Column="1"/>
+                                        <TextBox VerticalAlignment="Top"  IsReadOnly="True" Opacity="0.5" x:Name="TxtGenero" Margin="34,55,10,0" Width="150" Height="20" FontFamily="{StaticResource FranklinGothicFont}"
+                                                 Text="{Binding PacienteSeleccionado.Genero}" FontSize="16" Grid.Column="1"/>
+                                        <TextBox  VerticalAlignment="Top" IsReadOnly="True" Opacity="0.5" x:Name="TxtEstadoCivil" Margin="34,76,10,0" Width="150" Height="20" FontFamily="{StaticResource FranklinGothicFont}"
+                                                  Text="{Binding PacienteSeleccionado.EstadoCivil}" FontSize="16" Grid.Column="1"/>
+                                        <TextBox  VerticalAlignment="Top" IsReadOnly="True" Opacity="0.5" x:Name="txtAtencion" Margin="34,100,10,0" Width="150" Height="20" FontFamily="{StaticResource FranklinGothicFont}"
+                                                  Text="{Binding NAtencion,Mode=OneWay}" FontSize="16" Grid.Column="1"/>
+                                        <TextBox  VerticalAlignment="Top" IsReadOnly="True" Opacity="0.5" Text="{Binding TipoAtencion}" Margin="250,120,0,0" Foreground="DarkRed" FontSize="20" FontFamily="{StaticResource FranklinGothicFont}" Grid.ColumnSpan="2"/>
+                                        <TextBox VerticalAlignment="Top" IsReadOnly="True" Opacity="0.5" x:Name="TxtFamiliares" Margin="-39,215,44,0" Width="400" Height="20" FontFamily="{StaticResource FranklinGothicFont}"
+                                                 Text="{Binding Familiares,Mode=OneWay}" FontSize="16"/>
+                                        <TextBox VerticalAlignment="Top" IsReadOnly="True" Opacity="0.5" x:Name="TxtPatologicos" Margin="-39,242,44,0" Width="400" Height="20" FontFamily="{StaticResource FranklinGothicFont}"
+                                                 Text="{Binding Patologicos,Mode=OneWay}" FontSize="16"/>
+                                        <TextBox VerticalAlignment="Top" IsReadOnly="True" Opacity="0.5" x:Name="TxtQuirurgicos" Margin="-39,268,44,0" Width="400" Height="20" FontFamily="{StaticResource FranklinGothicFont}"
+                                                 Text="{Binding Quirurgicos,Mode=OneWay}" FontSize="16"/>
+                                        <TextBox  VerticalAlignment="Top" IsReadOnly="True" Opacity="0.5" x:Name="TxtAlergias" Margin="-39,295,44,0" Width="400" Height="20" FontFamily="{StaticResource FranklinGothicFont}"
+                                                  Text="{Binding Alergias,Mode=OneWay}" FontSize="16"/>
+                                        <TextBox  VerticalAlignment="Top" x:Name="TxtSyS" Margin="18,329,182,0" Width="400" Height="20" FontFamily="{StaticResource FranklinGothicFont}" FontSize="16"
+                                                  Text="{Binding SintomasYSignos,UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2"/>
+                                        <TextBox  VerticalAlignment="Top" x:Name="TxtFC" Margin="-75,410,80,0" Width="400" Height="20" FontFamily="{StaticResource FranklinGothicFont}" FontSize="16"
+                                                  Text="{Binding FC,UpdateSourceTrigger=PropertyChanged}"/>
+                                        <TextBox  VerticalAlignment="Top" x:Name="TxtFR" Margin="-75,435,80,0" Width="400" Height="20" FontFamily="{StaticResource FranklinGothicFont}" FontSize="16"
+                                                  Text="{Binding FR,UpdateSourceTrigger=PropertyChanged}"/>
+                                        <TextBox  VerticalAlignment="Top" x:Name="TxtT" Margin="-75,460,80,0" Width="400" Height="20" FontFamily="{StaticResource FranklinGothicFont}" FontSize="16"
+                                                  Text="{Binding Temperatura,UpdateSourceTrigger=PropertyChanged}"/>
+                                        <TextBox  VerticalAlignment="Top" x:Name="TxtPA" Margin="-75,488,80,0" Width="400" Height="20" FontFamily="{StaticResource FranklinGothicFont}" FontSize="16"
+                                                  Text="{Binding PresionArterial,UpdateSourceTrigger=PropertyChanged}"/>
+                                        <TextBox  VerticalAlignment="Top" x:Name="TxtPeso" Margin="-75,514,80,0" Width="400" Height="20" FontFamily="{StaticResource FranklinGothicFont}" FontSize="16"
+                                                  Text="{Binding Peso,UpdateSourceTrigger=PropertyChanged}"/>
+                                        <TextBox  VerticalAlignment="Top" x:Name="TxtTalla" Margin="-75,538,80,0" Width="400" Height="20" FontFamily="{StaticResource FranklinGothicFont}" FontSize="16"
+                                                  Text="{Binding Talla,UpdateSourceTrigger=PropertyChanged}"/>
+                                        <TextBox  VerticalAlignment="Top" x:Name="TxtIMC" Margin="-75,562,80,0" Width="400" Height="20" FontFamily="{StaticResource FranklinGothicFont}" FontSize="16"
+                                                  Text="{Binding IMC,UpdateSourceTrigger=PropertyChanged}"/>
+                                        <TextBox  VerticalAlignment="Top" x:Name="TxtDA" Margin="50,588,85,0" Height="20" FontFamily="{StaticResource FranklinGothicFont}" FontSize="16"
+                                                  Text="{Binding DescripcionEF,UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2"/>
+                                        <TextBox  VerticalAlignment="Top" x:Name="TxtExAux" Margin="50,625,85,0"  Height="20" FontFamily="{StaticResource FranklinGothicFont}" FontSize="16"
+                                                  Text="{Binding ExamenesA,UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2"/>
+                                        <TextBox  VerticalAlignment="Top" x:Name="TxtTra" Margin="5,670,85,0"  Height="20" FontFamily="{StaticResource FranklinGothicFont}" FontSize="16"
+                                                  Text="{Binding Tratamiento,UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2"/>
+                                        <TextBox  VerticalAlignment="Top" x:Name="TxtInt" Margin="5,701,85,0" Height="20" FontFamily="{StaticResource FranklinGothicFont}" FontSize="16"
+                                                  Text="{Binding InterConsulta,UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2"/>
+                                    </Grid>
+                                    <Button Content="Añadir Consulta"
+                                            HorizontalAlignment="Right"
+                                            VerticalAlignment="Bottom"
+                                            Margin="15,0,0,0"
+                                            Style="{StaticResource BotonS3}" Height="40" Width="150" Grid.Column="1"
+                                            Command="{Binding AddConsultaCommand}"/>
+                                </Grid>
+                            </StackPanel>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+
+</Window>

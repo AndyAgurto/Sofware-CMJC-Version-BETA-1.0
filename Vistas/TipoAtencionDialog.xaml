@@ -1,0 +1,18 @@
+﻿<Window x:Class="Sofware_CMJC_Version_1._0.Vistas.TipoAtencionDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sofware_CMJC_Version_1._0.Vistas"
+        mc:Ignorable="d"
+        Title="Selección de Tipo de Atención" Height="150" Width="300"  FontFamily="{StaticResource BebasNeueFont}" Background="#1A7C82">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+            <TextBlock Text="Seleccione el tipo de atención:" Margin="-10,0,0,10" FontFamily="{StaticResource BebasNeueFont}"/>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Ambulatorio" Margin="0,0,10,0" Click="Button_Click" Style="{StaticResource BotonS2}"/>
+                <Button Content="Emergencia" Click="Button_Click_1" Style="{StaticResource BotonS2}"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

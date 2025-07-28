@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="Sofware_CMJC_Version_1._0.Vistas.Consultas"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Sofware_CMJC_Version_1._0.Vistas" 
+             xmlns:vistamodelo="clr-namespace:Sofware_CMJC_Version_1._0.VistaModelo" 
+             d:DataContext="{d:DesignInstance Type=vistamodelo:ConsultasVM}"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+            Background="Transparent">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="310"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="5" Grid.Row="0">
+            <!-- Sección de Búsqueda -->
+            <TextBox Margin="15,10,450,0"
+                    Style="{StaticResource PlaceholderTextBox}"
+                    Tag="Buscar Paciente Documento de Identidad" 
+                    Height="20"
+                     Text="{Binding Busqueda}"/>
+            <Button Content="Buscar" 
+                Margin="15,5,0,0"
+                HorizontalAlignment="Left"
+                Style="{StaticResource BotonS3}"
+                Command="{Binding BuscarCommand}"/>
+        </StackPanel>
+        <!-- Sección de Lista Pacientes -->
+        <ListView Name="listaPacientes" Grid.Row="1" Margin="15,0,15,0" ItemsSource="{Binding Pacientes}" SelectedItem="{Binding PacienteSeleccionado}">
+            <!-- Columnas de la lista -->
+            <ListView.View>
+            <GridView>
+                <GridViewColumn Header="Tipo de Doc.ID." DisplayMemberBinding="{Binding TipoIdentidad}" />
+                <GridViewColumn Header="Documento de ID." DisplayMemberBinding="{Binding DIdentidad}" />
+                <GridViewColumn Header="Nombres" DisplayMemberBinding="{Binding Nombres}" />
+                <GridViewColumn Header="Apellidos" DisplayMemberBinding="{Binding Apellidos}" />
+                <GridViewColumn Header="Historia Clinica" DisplayMemberBinding="{Binding AsignacionHistoria}" />
+                <GridViewColumn Header="N° Consultas" DisplayMemberBinding="{Binding Consultas}" />
+                <GridViewColumn Header="Estado" DisplayMemberBinding="{Binding Estado}" />
+                <GridViewColumn Header="Fecha Agregado" DisplayMemberBinding="{Binding FechaAgregado}" />
+            </GridView>
+            </ListView.View>
+        </ListView>
+
+        <!-- Sección de Botones -->
+        <StackPanel Margin="0,15,0,0" Grid.Row="2">
+            <Button Content="Asignar Nueva Historia" 
+                   Margin="15,5,0,0"
+                   HorizontalAlignment="Left"
+                   Style="{StaticResource BotonS3}"
+                    Visibility="{Binding NuevaHistoriaVisibility}"
+                    Command="{Binding NuevaHistoriaCommand}"/>
+            <Button Content="Nueva Consulta"
+                   Margin="580,-25,0,0"
+                   HorizontalAlignment="Left"
+                   Style="{StaticResource BotonS3}"
+                    Visibility="{Binding NuevaConsultaVisibility}"
+                    Command="{Binding NuevaConsultaCommand}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,20 @@
+﻿CMJC
+1.0
+
+winexe
+C#
+.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Release\net7.0-windows7.0\win-x64\
+CMJC
+none
+false
+TRACE;RELEASE;NET;NET7_0;NETCOREAPP
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\App.xaml
+19-120649426
+11453593041
+52-138666589
+2351414640070
+Vistas\AddPaciente.xaml;Vistas\Consultas.xaml;Vistas\EditarUsuario.xaml;Vistas\EditPaciente.xaml;Vistas\FormularioHistoriaPrincipal.xaml;Vistas\FormularioHistoriaSecundaria.xaml;Vistas\HistoriaBasica.xaml;Vistas\HistoriasClinicas.xaml;Vistas\ListaHU.xaml;Vistas\Login.xaml;Vistas\Menu.xaml;Vistas\Pacientes.xaml;Vistas\Perfiles.xaml;Vistas\RecetaEstandar.xaml;Vistas\RecetaEstandarListaGeneral.xaml;Vistas\SignUp.xaml;Vistas\TipoAtencionDialog.xaml;Vistas\VentanaInformacionReceta.xaml;Vistas\VerConsultas.xaml;
+
+False
+

@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="Sofware_CMJC_Version_1._0.Vistas.HistoriasClinicas"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Sofware_CMJC_Version_1._0.Vistas" xmlns:vistamodelo="clr-namespace:Sofware_CMJC_Version_1._0.VistaModelo" d:DataContext="{d:DesignInstance Type=vistamodelo:HistoriaClinicaVM}"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="Transparent">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="330"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="5" Grid.Row="0">
+            <!-- Sección de Búsqueda -->
+            <TextBox Name="txtBusqueda" Margin="15,10,450,0"
+                     Style="{StaticResource PlaceholderTextBox}"
+                     Tag="Buscar por Codigo de Historia Clinica" Height="20"
+                     Text="{Binding TextoBusqueda, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button Content="Buscar" 
+                 Margin="15,5,0,0"
+                 HorizontalAlignment="Left"
+                 Style="{StaticResource BotonS3}"
+                   Command="{Binding BuscarCommand}"/> 
+        </StackPanel>
+        <!-- Sección de Lista de Historias -->
+        <ListView Name="listaHistorias" Grid.Row="1" Margin="15,0,15,0" Width="Auto" ItemsSource="{Binding HistoriasClinicas}" 
+                  SelectedItem="{Binding HistoriaSeleccionada}">
+            <!-- Columnas de la lista -->
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="Auto" Header="Codigo" DisplayMemberBinding="{Binding Codigo}" />
+                    <GridViewColumn Width="Auto" Header="Paciente" DisplayMemberBinding="{Binding Paciente.NombreCompleto}" />
+                    <GridViewColumn Width="Auto" Header="Tipo Documento" DisplayMemberBinding="{Binding Paciente.TipoIdentidad}" />
+                    <GridViewColumn Width="Auto" Header="Documento Identidad" DisplayMemberBinding="{Binding Paciente.DIdentidad}" />
+                    <GridViewColumn Width="Auto" Header="N°Consultas" DisplayMemberBinding="{Binding Paciente.Consultas}"/>
+                    <GridViewColumn Width="Auto" Header="Telefono" DisplayMemberBinding="{Binding Paciente.Telefono}"/>
+                    <GridViewColumn Width="Auto" Header="Dirección" DisplayMemberBinding="{Binding Paciente.Direccion}"/>
+                    <GridViewColumn Width="Auto" Header="Aseguradora" DisplayMemberBinding="{Binding Paciente.Aseguradora}"/>
+                    <GridViewColumn Width="Auto" Header="Tipo de Sangre" DisplayMemberBinding="{Binding Paciente.TipoSangre}"/>
+                    <GridViewColumn Width="Auto" Header="Estado" DisplayMemberBinding="{Binding Paciente.Estado}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <!-- Sección de Botones -->
+        <StackPanel Margin="5,5,5,-4" Grid.Row="2">
+            <Button Content="Ver Historial Clinico" 
+                    Margin="15,0,0,0"
+                    HorizontalAlignment="Left"
+                    Style="{StaticResource BotonS3}"
+                    Command="{Binding VerHistoriaCommand}"/>
+            <Button Content="Lista Recetas"
+                    Margin="200,-25,0,0"
+                    HorizontalAlignment="Left"
+                    Style="{StaticResource BotonS3}"
+                    Command="{Binding VerRecetasCommand}"/>
+            <Button Content="Consultas"
+                    Margin="615,-25,0,0"
+                    HorizontalAlignment="Left"
+                    Style="{StaticResource BotonS3}"
+                    Command="{Binding VerConsultasCommand}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

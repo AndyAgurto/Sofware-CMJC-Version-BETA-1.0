@@ -1,0 +1,26 @@
+﻿<Window x:Class="Sofware_CMJC_Version_1._0.Vistas.VentanaInformacionReceta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sofware_CMJC_Version_1._0.Vistas"
+        mc:Ignorable="d"
+        Title="Informacion de Receta" Height="350" Width="350">
+    <Grid Background="#1A7C82">
+        <StackPanel Margin="10">
+            <TextBlock Text="Fecha de Caducidad (dd/mm/yyyy):" FontSize="16" FontFamily="{StaticResource BebasNeueFont}"/>
+            <TextBox x:Name="txtFechaCaducidad" Width="200" Margin="0,5" FontSize="16" FontFamily="{StaticResource FranklinGothicFont}"/>
+
+            <TextBlock Text="Nombre del Archivo:" FontSize="16" FontFamily="{StaticResource BebasNeueFont}"/>
+            <TextBox x:Name="txtNombreArchivo" Width="200" Margin="0,5" FontSize="16" FontFamily="{StaticResource FranklinGothicFont}"/>
+
+            <TextBlock Text="Tipo MIME:" FontSize="16" FontFamily="{StaticResource BebasNeueFont}"/>
+            <TextBox x:Name="txtTipoMIME" Width="200" Margin="0,5" FontSize="16" FontFamily="{StaticResource FranklinGothicFont}"/>
+
+            <StackPanel Orientation="Horizontal" Margin="0,20">
+                <Button Content="Guardar" Width="80" Margin="0,0,10,0" Click="btnGuardar_Click" Style="{StaticResource BotonS2}"/>
+                <Button Content="Cancelar" Width="80" Click="btnCancelar_Click"  Style="{StaticResource BotonS2}"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

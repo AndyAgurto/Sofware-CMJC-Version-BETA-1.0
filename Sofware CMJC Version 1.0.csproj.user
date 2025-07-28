@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Vistas\AddPaciente.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\Consultas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\EditarUsuario.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\EditPaciente.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\FormularioHistoriaPrincipal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\FormularioHistoriaSecundaria.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\HistoriaBasica.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\HistoriasClinicas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\ListaHU.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\Menu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\Pacientes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\Perfiles.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\RecetaEstandar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\RecetaEstandarListaGeneral.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\SignUp.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\TipoAtencionDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\VentanaInformacionReceta.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\VerConsultas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Update="Vistas\Recursos\Style_CMJC.xaml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Update="Vistas\AddPaciente.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\Consultas.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\EditarUsuario.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\EditPaciente.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\FormularioHistoriaPrincipal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\FormularioHistoriaSecundaria.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\HistoriaBasica.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\HistoriasClinicas.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\ListaHU.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\Menu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\Pacientes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\Perfiles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\RecetaEstandar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\RecetaEstandarListaGeneral.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\SignUp.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\TipoAtencionDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\VentanaInformacionReceta.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\VerConsultas.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

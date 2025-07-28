@@ -1,0 +1,226 @@
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\CMJC.exe
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\CMJC.dll.config
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\CMJC.deps.json
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\CMJC.runtimeconfig.json
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\CMJC.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\CMJC.pdb
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Azure.Core.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Azure.Identity.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\BouncyCastle.Cryptography.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Xceed.Document.NET5.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Xceed.Words.NET5.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\HarfBuzzSharp.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Humanizer.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\MailKit.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Data.SqlClient.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Logging.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Options.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Identity.Client.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.SqlServer.Server.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\MimeKit.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Mono.TextTemplating.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Spire.Doc.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\System.Memory.Data.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\System.Runtime.Caching.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Sofware CMJC Version 1.0.csproj.AssemblyReference.cache
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\AddPaciente.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Consultas.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\EditarUsuario.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\EditPaciente.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\FormularioHistoriaPrincipal.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\FormularioHistoriaSecundaria.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\HistoriaBasica.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\HistoriasClinicas.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\ListaHU.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Login.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Menu.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Pacientes.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Perfiles.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\RecetaEstandar.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\RecetaEstandarListaGeneral.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\SignUp.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\TipoAtencionDialog.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\VentanaInformacionReceta.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\VerConsultas.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\App.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\CMJC_Content.g.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\CMJC_MarkupCompile.cache
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\CMJC_MarkupCompile.lref
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\App.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\AddPaciente.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Consultas.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\EditarUsuario.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\EditPaciente.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\FormularioHistoriaPrincipal.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\FormularioHistoriaSecundaria.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\HistoriaBasica.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\HistoriasClinicas.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\ListaHU.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Login.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Menu.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Pacientes.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Perfiles.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\RecetaEstandar.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\RecetaEstandarListaGeneral.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\SignUp.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\TipoAtencionDialog.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\VentanaInformacionReceta.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\VerConsultas.baml
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\CMJC.g.resources
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Sofware CMJC Version 1.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Sofware CMJC Version 1.0.AssemblyInfoInputs.cache
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Sofware CMJC Version 1.0.AssemblyInfo.cs
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Sofware CMJC Version 1.0.csproj.CoreCompileInputs.cache
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Sofware CMJC Version 1.0.csproj.CopyComplete
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\CMJC.dll
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\CMJC.pdb
+C:\Users\Andy Agurto\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Sofware CMJC Version 1.0.genruntimeconfig.cache
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\CMJC.exe
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\CMJC.dll.config
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\CMJC.deps.json
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\CMJC.runtimeconfig.json
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\CMJC.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\CMJC.pdb
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Azure.Core.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Azure.Identity.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\BouncyCastle.Cryptography.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Xceed.Document.NET5.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Xceed.Words.NET5.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\HarfBuzzSharp.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Humanizer.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\MailKit.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Data.SqlClient.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Logging.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Options.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Identity.Client.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Microsoft.SqlServer.Server.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\MimeKit.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Mono.TextTemplating.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\Spire.Doc.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\System.Memory.Data.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\System.Runtime.Caching.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\bin\Debug\net7.0-windows7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Sofware CMJC Version 1.0.csproj.AssemblyReference.cache
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\AddPaciente.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Consultas.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\EditarUsuario.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\EditPaciente.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\FormularioHistoriaPrincipal.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\FormularioHistoriaSecundaria.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\HistoriaBasica.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\HistoriasClinicas.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\ListaHU.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Login.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Menu.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Pacientes.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Perfiles.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\RecetaEstandar.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\RecetaEstandarListaGeneral.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\SignUp.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\TipoAtencionDialog.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\VentanaInformacionReceta.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\VerConsultas.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\App.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\CMJC_Content.g.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\CMJC_MarkupCompile.cache
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\CMJC_MarkupCompile.lref
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\App.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\AddPaciente.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Consultas.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\EditarUsuario.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\EditPaciente.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\FormularioHistoriaPrincipal.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\FormularioHistoriaSecundaria.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\HistoriaBasica.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\HistoriasClinicas.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\ListaHU.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Login.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Menu.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Pacientes.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\Perfiles.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\RecetaEstandar.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\RecetaEstandarListaGeneral.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\SignUp.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\TipoAtencionDialog.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\VentanaInformacionReceta.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Vistas\VerConsultas.baml
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\CMJC.g.resources
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Sofware CMJC Version 1.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Sofware CMJC Version 1.0.AssemblyInfoInputs.cache
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Sofware CMJC Version 1.0.AssemblyInfo.cs
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Sofware CMJC Version 1.0.csproj.CoreCompileInputs.cache
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Sofware .F7C2D903.Up2Date
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\CMJC.dll
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\CMJC.pdb
+C:\Users\ANDY\source\repos\Sofware CMJC Version 1.0\obj\Debug\net7.0-windows7.0\Sofware CMJC Version 1.0.genruntimeconfig.cache

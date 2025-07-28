@@ -1,0 +1,146 @@
+﻿<Window x:Class="Sofware_CMJC_Version_1._0.Vistas.VerConsultas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sofware_CMJC_Version_1._0.Vistas" 
+        xmlns:vistamodelo="clr-namespace:Sofware_CMJC_Version_1._0.VistaModelo" 
+        d:DataContext="{d:DesignInstance Type=vistamodelo:VerConsultasVM}"
+        mc:Ignorable="d"
+        Title="VerConsultas"
+        Height="600" Width="835"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        Background="Transparent">
+
+    <Border CornerRadius="0"
+   BorderThickness="2.5" Margin="0,0,0,0">
+
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0.5,1.5" EndPoint="1,1">
+                <GradientStop Color="{StaticResource Color1}" Offset="1"/>
+                <GradientStop Color="{StaticResource Color2}" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,0">
+                <GradientStop Color="{StaticResource Color4}" Offset="0"/>
+                <GradientStop Color="{StaticResource Color4}" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <!-- Contenido principal -->
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border CornerRadius="35"
+                  Grid.Column="0">
+                <Border.Background>
+                    <ImageBrush Opacity="0.25" ImageSource="/Vistas/Recursos/LOGO.png"/>
+                </Border.Background>
+
+                <Grid Margin="0,0,-25,0">
+                    <Grid.RowDefinitions>
+                        <!--Barra Superior-->
+                        <RowDefinition Height="25"/>
+                        <!--Titulo-->
+                        <RowDefinition Height="55"/>
+                        <!--Buscar-->
+                        <RowDefinition Height="55"/>
+                        <!--Contenido-->
+                        <RowDefinition Height="400"/>
+                        <!--Botones-->
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel x:Name="PnlControlBar"
+                              Grid.Row="0"
+                              Orientation="Horizontal"
+                              FlowDirection="RightToLeft"
+                              Background="#1A7C82"
+                              MouseDown="PnlControlBar_MouseLeftButtonDown"
+                              MouseLeftButtonUp="PnlControlBar_MouseLeftButtonUp" Margin="0,0,25,0">
+
+                        <Button x:Name="btnBack"
+                               Click="btnBack_Click"
+                              Style="{StaticResource BotonS1}">
+                            <Image Source="/Vistas/Recursos/anterior.png" Width="16"/>
+                        </Button>
+
+                        <Button x:Name="btnMinimize"
+                              Style="{StaticResource BotonS1}"
+                              Click="BtnMinimize_Click">
+                            <Image Source="/Vistas/Recursos/menos.png" Width="16"/>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1"
+                               Orientation="Horizontal"
+                               Background="#FFFFFF" Margin="0,0,26,0">
+                        <Image Margin="0" Source="/Vistas/Recursos/medico-paciente.png"/>
+                        <TextBlock Text="Consultas"
+                                  Foreground="#4D4D4D"
+                                  Margin="5"
+                                  FontSize="35"
+                                  FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBlock Text="Usuario:"
+                                  Foreground="#4D4D4D"
+                                  HorizontalAlignment="Right"
+                                  Margin="300,20,0,0"
+                                  FontSize="20"
+                                  FontFamily="{StaticResource BebasNeueFont}"/>
+                        <TextBlock 
+                                  Foreground="#4D4D4D"
+                                  HorizontalAlignment="Right"
+                                  Margin="10,20,0,0"
+                                  FontSize="20"
+                                  FontFamily="{StaticResource BebasNeueFont}"
+                                  Text="{Binding UserFullName}"/>
+                    </StackPanel>
+                    <StackPanel Margin="5,5,25,5" Grid.Row="2">
+                        <!-- Sección de Búsqueda -->
+                        <Image Source="/Vistas/Recursos/lupa.png" 
+                               Height="25" Width="35" HorizontalAlignment="Left" Margin="2.5,0,0,0"/>
+                        <TextBox Name="txtBusqueda" Margin="30,-25,450,0"
+                                 Style="{StaticResource PlaceholderTextBox}"
+                                 Tag="Buscar por N°Atencion" Height="20"
+                                 TextChanged="txtBusqueda_TextChanged"
+                                  Text="{Binding TextBusqueda,UpdateSourceTrigger=PropertyChanged}"/>
+                    </StackPanel>
+                    <!-- Sección de Lista de Consultas -->
+                    <ListView Name="listaConsultas" Grid.Row="3" Margin="15,0,40,0" ItemsSource="{Binding ConsultasFiltradas}" SelectedItem="{Binding ConsultaSeleccionada}">
+                        <!-- Columnas de la lista -->
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Width="Auto" Header="N°Atencion" DisplayMemberBinding="{Binding NAtencion}"/>
+                                <GridViewColumn Width="Auto" Header="Tipo Atención" DisplayMemberBinding="{Binding TipoAtencion}"/>
+                                <GridViewColumn Width="Auto" Header="Fecha de Atención" DisplayMemberBinding="{Binding Fecha}"/>
+                                <GridViewColumn Width="Auto" Header="Recetas" DisplayMemberBinding="{Binding CRecetas}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+                    <!-- Sección de Botones -->
+                    <StackPanel Margin="5,5,5,-4" Grid.Row="4">
+                        <Button Content="Ver Consulta" 
+            Margin="15,0,0,0"
+            HorizontalAlignment="Left"
+            Style="{StaticResource BotonS3}"
+                                Command="{Binding VerConsultaCommand}"/>
+                        <Button Content="Exportar Consulta"
+            Margin="400,-25,0,0"
+            HorizontalAlignment="Left"
+            Style="{StaticResource BotonS3}"
+                                 Command="{Binding ExportarConsultaCommand}"/>
+                        <Button Content="Volver al Menu"
+            Margin="635,-25,0,0"
+            HorizontalAlignment="Left"
+            Style="{StaticResource BotonS2}"
+                                 Command="{Binding VolverAlMenuCommand}"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</Window>
