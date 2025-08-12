@@ -54,9 +54,10 @@ Software de escritorio para la gestión de un Consultorio Médico, desarrollado 
 
 ## Autor y Licencia
 
-- **Autor:** Andy Agurto Urcia
-- **Empresa:** DEVELOPERS AAU // devopsolutionsa@gmail.com
-- **Licencia:** Propietario, uso interno.
+- Autor: Andy Agurto Urcia. 
+- Empresa: AU DEVELOPERS. 
+- Correo: devopsolutionsa@gmail.com. 
+- Licencia: Propietario, uso interno.
 
 ---
 
